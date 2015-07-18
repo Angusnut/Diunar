@@ -1,0 +1,41 @@
+{
+  "name": "Diunar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.2.1",
+    "body-parser": "^1.0.2",
+    "connect-redis": "^2.3.0",
+    "cookie-parser": "^1.0.1",
+    "debug": "^0.7.4",
+    "express": "^4.2.0",
+    "express-generator": "^4.12.4",
+    "express-session": "^1.11.3",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-livescript": "^2.4.0",
+    "jade": "^1.3.1",
+    "later": "^1.1.6",
+    "livescript": "^1.4.0",
+    "mongoose": "^3.9.7",
+    "morgan": "^1.0.1",
+    "redis": "^0.12.1",
+    "supervisor": "^0.6.0",
+    "static-favicon": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sysulihan/Diunar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sysulihan/Diunar/issues"
+  },
+  "homepage": "https://github.com/sysulihan/Diunar"
+}
