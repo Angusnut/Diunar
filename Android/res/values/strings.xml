@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Diunar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account">账户</string>
+    <string name="password">密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="rpw">记住密码</string>
+    <string name="new_account">用户名</string>
+    <string name="ensure_pw">确认密码</string>
+    <string name="register_new">注册新用户</string>
+    <string name="info">发布</string>
+    <string name="search">查询</string>
+    <string name="main">首页</string>
+    <string name="title">标题</string>
+    <string name="classs">类别</string>
+    <string name="miss">丢东西</string>
+    <string name="get">捡东西</string>
+    <string name="time">时间</string>
+    <string name="location">地点</string>
+    <string name="biaozhu">标注</string>
+    <string name="desc">描述</string>
+    <string name="phone">联系电话</string>
+    <string name="resubmit">发布</string>
+    <string name="hint1">快去地图上标记一下吧！</string>
+    <string name="hint2">这是一个什么样的东西呢？</string>
+    <string name="hint3">留个电话吧！</string>
+    <string name="xinxi">信息发布</string>
+    <string name="sample">涛哥还在山坡吃~草~</string>
+    <string name="samples">"  放涛哥的却不知道哪儿去了，不是涛哥贪玩丢了涛哥，放涛哥的孩子王二小"</string>
+    <string name="searchh">信息查询</string>
+    <string name="mapss">地图标注</string>
+    <string name="locations">我的位置</string>
+    <string name="submit">提交</string>
+    <string name="xincha">信息查询</string>
+    <string name="anleibie">" 类别"</string>
+    <string name="anbiaoqian">" 标签"</string>
+    <string name="anshijian">" 时间"</string>
+    <string name="andidian">" 地点"</string>
+    <string name="clas">类别：</string>
+    <string name="shijian">时间：</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="locat">地点：</string>
+    <string name="hints">(可选)请输入关键字......</string>
+    <string name="hint4">请输入用户名</string>
+    <string name="hint5">请输入密码(至少6位)</string>
+    <string name="hint7">请确认密码</string>
+    <string name="biaoqian">标签</string>
+	<string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>	
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <string name="infor">详细信息</string>
+    <string name="myinfor">我的信息</string>
+    <string name="deletes">删除</string>
+    <string name="motify">修改</string>
+</resources>

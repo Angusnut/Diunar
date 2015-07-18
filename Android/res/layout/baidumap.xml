@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutfabu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/big_button_up"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cust"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.3"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <ImageButton
+                android:id="@+id/backs"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/nolor"
+                android:src="@drawable/jiantou" />
+
+            <TextView
+                android:id="@+id/user_tom_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_chlayout13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/mytitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/mapss"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cuout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/user_c_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cyout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/mapsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/submit"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" >
+        </com.baidu.mapapi.map.MapView>
+
+        <Button
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/locations" />
+
+    </RelativeLayout>
+	
+</LinearLayout>

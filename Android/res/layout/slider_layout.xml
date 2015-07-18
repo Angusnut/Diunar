@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_ctrl_ch_custom_tab_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fafafa" >
+
+    <LinearLayout
+        android:id="@+id/user_ctrl_ch_custom_layoutBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/big_button_up"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_custom_relayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.7" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/nolor"
+                android:src="@drawable/touxiang" />
+
+            <ImageView
+                android:id="@+id/imageViews"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:src="@drawable/icon" />
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_custom_relayout13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.1"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/user_ctrl_ch_custom_tab13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/main"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_custom_relayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@drawable/slidebar" >
+
+            <TextView
+                android:id="@+id/user_ctrl_ch_custom_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/main"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_custom_relayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/user_ctrl_ch_custom_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_custom_relayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/user_ctrl_ch_custom_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/search"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_ctrl_ch_custom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_ctrl_ch_custom_layoutBar"
+        android:background="#fafafa"
+        android:orientation="vertical" >
+
+       <com.example.Diunar.AutoListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

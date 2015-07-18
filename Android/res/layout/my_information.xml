@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/linearlayoutfabu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/big_button_up"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cust"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_weight="1.3" >
+
+            <ImageButton
+                android:id="@+id/back121"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/nolor"
+                android:src="@drawable/jiantou" />
+
+            <TextView
+                android:id="@+id/user_tom_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_chlayout13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/mytitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/myinfor"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cuout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/user_c_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/info"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_ctrl_ch_cyout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/tom_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/search"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearlayoutfabu"
+        android:paddingTop="15dp" >
+
+        <ListView
+            android:id="@+id/listView121"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+    </LinearLayout>
+</RelativeLayout>
