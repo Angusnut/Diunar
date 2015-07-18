@@ -1,0 +1,5 @@
+div.r-query-msgs
+  div.r-query-msgs-title #[a(href='/msg/' + msg._id) #{msg.title}]
+  div.r-query-msgs-tag #{msg.tag}
+  div.r-query-msgs-detail #{msg.detail.substr(0, 80)}
+  div.r-query-msgs-date #{msg.date.toDateString()}
