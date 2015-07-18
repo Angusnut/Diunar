@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  link(rel='stylesheet' type='text/css' href='/pages/create-msg/create-msg.css')
+  
+  div#create-msg-container
+    form#create-msg-form
+      div.create-msg-item
+        label.create-msg-label title
+        input(type='text' name='title')
+      div.create-msg-item
+        label.create-msg-label type
+        input(type='radio' name='type' value='0')
+        span Lost
+        input(type='radio' name='type' value='1')
+        span Found
+      div.create-msg-item
+        label.create-msg-label tag
+        each tag in tags
+          input(type='radio' name='tag' value=tag)
+          span #{tag}
+      div.create-msg-item
+        label.create-msg-label location
+        div#create-msg-map-container
+      div.create-msg-item
+        label.create-msg-label detail
+        textarea(name='detail')
+      div.create-msg-item
+        label.create-msg-label contact
+        textarea(name='contact')
+      div#create-msg-alert
+      button submit
+
+  script(src='http://api.map.baidu.com/api?v=1.5&ak=E1e8j2SOvz3rolEMtb2vlaIC')
+  script(src='/pages/LocationPicker/LocationPicker.js')
+  script(src='/pages/create-msg/create-msg.js')

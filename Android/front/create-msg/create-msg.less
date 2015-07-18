@@ -1,0 +1,56 @@
+@import '../utils/colors';
+
+#create-msg-container {
+    & .create-msg-item {
+        padding: 10px 0;
+
+        &>* {
+            margin-top: 10px;
+        }
+
+        input[type='text'], textarea {
+            width: 100%;
+        }
+
+        input[type='text'] {
+            height: 30px;
+        }
+
+        textarea {
+            min-height: 140px;
+        }
+
+        label {
+            font-weight: 900;
+            margin-right: 10px;
+            display: block;
+        }
+
+        span+input[type='radio'] {
+            margin-left: 10px;
+        }
+
+        input[type='radio'] {
+            margin-right: 5px;
+        }
+
+        input[type='radio']+span {
+            margin-right: 5px;
+            display: inline-block;
+            width: 80px;
+        }
+    }
+
+    button {
+        padding: 5px 20px;
+    }
+}
+
+#create-msg-alert {
+    color: red;
+}
+
+#create-msg-map-container {
+    width: 640px;
+    height: 360px;
+}

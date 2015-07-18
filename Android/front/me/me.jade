@@ -1,0 +1,20 @@
+extends layout
+
+
+block content
+  link(rel='stylesheet' type='text/css' href='/pages/r-query-msgs/r-query-msgs.css')
+  link(rel='stylesheet' type='text/css' href='/pages/utils/tab-msgs.css')
+  
+  div#me-container
+    div#me-tabs-container.tabs-container
+      div#me-lost My Losts
+      div#me-found My Founds
+    div#me-msgs-container.msgs-container
+      div#me-lost-msgs
+        each msg in lostMsgs
+          include _r-query-msgs
+      div#me-found-msgs
+        each msg in foundMsgs
+          include _r-query-msgs
+
+  script(src='/pages/me/me.js')

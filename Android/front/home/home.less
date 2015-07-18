@@ -1,0 +1,36 @@
+@import '../utils/colors';
+
+#home-filters-container {
+    &>div {
+        margin-bottom: 20px;
+        
+        &>label {
+            font-weight: 900;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &>span+input[type='radio'] {
+            margin-left: 20px;
+        }
+
+        &>input[type='radio'] {
+            margin-right: 5px;
+        }
+    }
+}
+
+#home-map-container {
+    width: 640px;
+    height: 360px;
+}
+
+#home-pages {
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+
+    span+span {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title #{title || 'Diunar'}
+    link(rel='stylesheet' type='text/css' href='/pages/layout/layout.css')
+    script(src='/jquery/jquery.js')
+  body
+    div#layout-header
+      div#layout-header-left
+        a#layout-header-home(href='/home') Diunar
+      div#layout-header-right
+        if username
+          a#layout-header-signin.layout-hide signin
+          a#layout-header-signup.layout-hide signup
+          a#layout-header-create(href='/create-msg') create
+          a#layout-header-user #{username}
+        else
+          a#layout-header-signin signin
+          a#layout-header-signup signup
+          a#layout-header-create.layout-hide(href='/create-msg') create
+          a#layout-header-user.layout-hide
+        div#layout-header-signin-container.layout-hide
+          form#layout-header-signin-form
+            label username
+            input(type='text' name='username' required)
+            label password
+            input(type='password' name='password' required)
+            div.layout-header-container-alert.layout-hide
+            button signin
+        div#layout-header-signup-container.layout-hide
+          form#layout-header-signup-form
+            label username
+            input(type='text' name='username' required)
+            label password
+            input(type='password' name='password' required)
+            label confirm password
+            input(type='password' name='confirmPassword' required)
+            div.layout-header-container-alert.layout-hide
+            button signup
+        div#layout-header-user-menu.layout-hide
+          a#layout-header-user-me(href='/me') me
+          a#layout-header-user-signout signout
+    div#layout-container
+      block content
+    div#layout-footer by Team Diunar
+    script(src='/pages/layout/layout.js')

@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  link(rel='stylesheet' type='text/css' href='/pages/home/home.css')
+  link(rel='stylesheet' type='text/css' href='/pages/utils/tab-msgs.css')
+  
+  div#home-container
+    div#home-filters-container
+      div#home-filters-tag
+        label tag
+        input(type='radio' name='tag' value='' checked)
+        span all
+        each tag in tags
+          input(type='radio' name='tag' value=tag)
+          span #{tag}
+      div#home-filters-date
+        label date
+        input(type='date' name='date')
+      div#home-filters-location
+        label location
+        div#home-map-container
+    div#home-tabs-container.tabs-container
+      div#home-lost Lost
+      div#home-found Found
+    div#home-msgs-container.msgs-container
+      include r-query-msgs
+    div#home-pages(curPage=0)
+
+  script(src='http://api.map.baidu.com/api?v=1.5&ak=E1e8j2SOvz3rolEMtb2vlaIC')
+  script(src='/pages/LocationPicker/LocationPicker.js')
+  script(src='/pages/home/home.js')

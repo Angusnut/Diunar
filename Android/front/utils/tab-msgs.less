@@ -1,0 +1,31 @@
+@import '../utils/colors';
+
+.tabs-container {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: -1px;
+    z-index: 1;
+
+    &>div {
+        height: 100%;
+        width: 140px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+
+        &.tab-checked,
+        &:hover {
+            border: solid 1px @main-color;
+            border-bottom-color: @main-color-1;
+        }
+
+        &+div {
+            margin-left: -1px;
+        }
+    }
+}
+
+.msgs-container {
+    border-top: solid 1px @main-color;
+    border-bottom: solid 1px @main-color;
+}

@@ -1,0 +1,41 @@
+@import '../utils/colors';
+
+.r-query-msgs {
+    padding: 10px;
+
+    &>div {
+        display: inline-block;
+        height: 30px;
+    }
+}
+
+.r-query-msgs-title,
+.r-query-msgs-detail {
+    width: 75%;
+    margin-right: 5%;
+}
+
+.r-query-msgs-title>a {
+    font-size: 18px;
+}
+
+.r-query-msgs-detail {
+    text-indent: 2rem;
+}
+
+.r-query-msgs-tag,
+.r-query-msgs-date {
+    width: 20%;
+}
+
+.r-query-msgs-detail,
+.r-query-msgs-date {
+    position: relative;
+    top: 5px;
+}
+
+.r-query-msgs-detail,
+.r-query-msgs-tag,
+.r-query-msgs-date {
+    color: @font-gray;
+}

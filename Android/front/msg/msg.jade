@@ -1,0 +1,79 @@
+extends layout
+
+
+block content
+  link(rel='stylesheet' type='text/css' href='/pages/msg/msg.css')
+
+  if username == msg.publisher
+    div#msg-container
+      div#msg-title-container
+        label title
+        a.msg-edit-anchor [edit]
+        div.msg-preview #{msg.title}
+        form.msg-form
+          input.msg-input(type='text' name='title' required)
+          button
+      div
+        label type
+        div #{msg.type ? 'Found' : 'Lost'}
+      div#msg-tag-container
+        label tag
+        a.msg-edit-anchor [edit]
+        div.msg-preview #{msg.tag}
+        form.msg-form
+          each tag in tags
+            input(type='radio' name='tag' value=tag required)
+            span #{tag}
+          button
+      div#msg-location-container
+        label location
+        a.msg-edit-anchor [edit]
+        div#msg-map-container
+        div#msg-location(style='display:none') #{JSON.stringify(msg.location)}
+      div#msg-detail-container
+        label detail
+        a.msg-edit-anchor [edit]
+        div.msg-preview #{msg.detail}
+        form.msg-form
+          textarea.msg-input(name='detail' required)
+          button
+      div#msg-contact-container
+        label contact
+        a.msg-edit-anchor [edit]
+        div.msg-preview #{msg.contact}
+        form.msg-form
+          textarea.msg-input(name='contact' required)
+          button
+      div
+        label date
+        div #{msg.date.toDateString()}
+      div
+        button#msg-remove-button(type='button') remove
+  else
+    div#msg-container
+      div
+        label title
+        div #{msg.title}
+      div
+        label type
+        div #{msg.type ? 'Found' : 'Lost'}
+      div
+        label tag
+        div #{msg.tag}
+      div
+        label location
+        div#msg-map-container
+        div#msg-location(style='display:none') #{JSON.stringify(msg.location)}
+      div
+        label detail
+        div #{msg.detail}
+      div
+        label contact
+        div #{msg.contact}
+      div
+        label date
+        div #{msg.date.toDateString()}
+
+  script(src='http://api.map.baidu.com/api?v=1.5&ak=E1e8j2SOvz3rolEMtb2vlaIC')
+  script(src='/pages/LocationPicker/LocationPicker.js')
+  script(src='/pages/msg/msg.js')
