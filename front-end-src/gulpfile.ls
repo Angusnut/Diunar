@@ -20,6 +20,13 @@ copyJade = (cb)!->
         .on 'end', cb
   ), cb
 
+copyJs = (cb)!->
+  async.parallel (pages.map (page)-> (cb)!->
+    gulp.src "#{page}/*.js"
+        .pipe gulp.dest "../public/pages/#{page}"
+        .on 'end', cb
+  ), cb
+
 compileLess = (cb)!->
   async.parallel (pages.map (page)-> (cb)!->
     gulp.src "#{page}/*.less"
@@ -50,6 +57,7 @@ buildAll = (cb)!->
   getPages!
   async.parallel [
     copyJade
+    copyJs
     compileLess
     compileLs
   ], !->

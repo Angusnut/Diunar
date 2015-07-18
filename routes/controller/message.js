@@ -199,7 +199,7 @@ exports.deleteMessage = function(req, res){
 
 
 function cmp(a, b){
-    return a.dist < b.dist;
+    return a.dist > b.dist;
 };
 
 
@@ -239,9 +239,10 @@ exports.queryMessage = function(req, res){
                 if(req.body.location != undefined && req.body.location != null){
                     x = req.body.location.x;
                     y = req.body.location.y;
-                    for(var i = 0; i < messages.length; i++){
-                        current[i].dist = (current[i].location.x - x)*(current[i].location.x - x) + (current[i].location.y - y)*(current[i].location.y - y);
-                    }
+                    // for(var i = 0; i < messages.length; i++){
+                        // current[i].dist = (current[i].location.x - x)*(current[i].location.x - x) + (current[i].location.y - y)*(current[i].location.y - y);
+                        current.dist = (current.location.x - x)*(current.location.x - x) + (current.location.y - y)*(current.location.y - y);
+                    // }
                 }
                 msgs[i] = current;
             }
